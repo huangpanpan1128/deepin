@@ -1,0 +1,98 @@
+.app-layout {
+    width: 100%;
+    height: 820px;
+    margin-top: 200px;
+}
+
+
+.app-title {
+    width: 1200px;
+    margin: 0 auto;
+    height: 253px;
+}
+
+.app-title h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.app-title p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000a6;
+    line-height: 28px;
+    margin-bottom: 60px;
+    white-space: break-spaces;
+}
+
+.app-box {
+    display: flex;
+    width: 1200px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.app-box .appbox {
+    width: 588px;
+    height: 254px;
+    background-color: #ffffff;
+    border: 1px solid grey;
+}
+
+
+.appbox .up{
+    padding: 32px;
+}
+
+.appbox up h3{
+    display: block;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0a1943;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.appbox .m-content {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 24px;
+}
+
+.appbox .down {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.down .tubiao {
+    display: flex;
+    align-items: center;
+    padding-left: 26px;
+    border: 1px solid #e3e6eb;
+    border-bottom: none;
+    height: 40px;
+    white-space: pre;
+}
+
+.down .tubiao img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.down .tubiao span {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 20px;
+}

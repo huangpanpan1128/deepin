@@ -1,0 +1,102 @@
+.character-layout {
+    width: 100%;
+    height: 685px;
+    margin-top: 200px;
+
+}
+
+.character {
+    overflow: hidden;
+}
+
+.character .title {
+    width: 1200px;
+    height: 253px;
+}
+
+.character .title h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.character .title p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000a6;
+    line-height: 28px;
+    margin-bottom: 60px;
+    white-space: break-spaces;
+}
+
+.characterbox-layout {
+    width: 1200px;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.characterbox {
+    width: 282px;
+    background: #ffffff;
+    padding-bottom: 10px;
+    border: 1px solid rgba(0,0,0,.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.characterbox .content {
+    padding: 20px 24px;
+}
+
+.characterbox .content img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin-left: -0.5rem;
+}
+
+.characterbox .content h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #0a1943;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.characterbox .content .m-content {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #000000a6;
+    line-height: 24px;
+}
+
+.characterbox .m-cover {
+    width: 282px;
+    position: relative;
+}
+
+.characterbox .m-cover .picture1{
+    width: 262px;
+    height: 100%;
+    display: block;
+}
+
+.characterbox .m-cover .picture2 {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 182px;
+    right: 0;
+    width: 80px;
+    height: 100%;
+}
