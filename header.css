@@ -4,12 +4,16 @@
     }
   
   .header-layout {
+    position: fixed;
+    z-index: 1;
+    top:0;
     width: 100%;
     background-color: black;
     height: 64px;
   }
 
    .header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,13 +35,11 @@
 
 
   .nav li {
-    position: relative;
     margin-right: 20px;
   }
 
    .nav li a {
     font-size: 14px;
-    position: relative;
     color: aliceblue;
     text-decoration: none;
   }
@@ -47,35 +49,37 @@
     height: 12px;
 }
 
- .nav li a::before {
+.nav li a span {
+  position: relative;
+}
+
+ .nav li a span::before {
   content: "";
   position: absolute;
-  bottom: 0;
+  top:0;
   left: 0;
   width: 100%;
-  height: 1px;
-  background-color: skyblue;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  height: 100%;
+  border-bottom: 2px solid #2ca7eb;
+  transform: scale(0, 1);
 }
 
- .nav li a:hover:before {
-  opacity: 1;
-}
-
- .nav li a:hover span {
-  color: skyblue;
+nav>li>a:hover span::before,
+nav>li>a:hover span {
+    color: #2ca7eb;
+    transform: scale(1, 1);
+    transition: all 0.5s;
 }
 
 .nav li ul {
   position: absolute;
   list-style: none;
-  top: 100%;
-  left: 0;
-  display: none;
+  height: 0px;
+  width: 100px;
+  top: 64px;
+  overflow: hidden;
   z-index: 1;
   background-color: #fff;
-  padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -84,5 +88,6 @@
 }
 
 .nav li:hover ul {
-  display: block;
+  height: 140px;
+  transition: height 1s;
 }

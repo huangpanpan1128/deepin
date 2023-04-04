@@ -1,7 +1,7 @@
 
 .picture-layout {
     width: 100%;
-    height: 585px;
+    margin-top: 50px;
 }
 
 .picture {
@@ -11,34 +11,40 @@
 .picture img {
     display: block;
     width: 100%;
-    height: 100%;
+    min-height: 60%;
 }
 
-.picture h1,p{
-    position: absolute;
+
+.picture h1 {
+  position: absolute;
   left: 18%;
   right: 0;
   /* text-align: center; 文字水平居中 */
   margin: 0; /* 去除默认的margin */
   padding: 10px; /* 可以根据需要调整 */
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 文字阴影，可选 */
-}
-
-.picture h1 {
     font-size: 56px;
     font-weight: 500;
     color: rgb(255,255,255);
     top: 20%; /* 根据实际情况调整 */
-  z-index: 2; /* 保证文字在图片上方 */
+  z-index: 0; /* 保证文字在图片上方 */
+
 }
 
 .picture p {
+  position: absolute;
+  left: 18%;
+  right: 0;
+  /* text-align: center; 文字水平居中 */
+  margin: 0; /* 去除默认的margin */
+  padding: 10px; /* 可以根据需要调整 */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* 文字阴影，可选 */
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: rgb(255,255,255);
     top: 45%; /* 根据实际情况调整 */
-  z-index: 2; /* 保证文字在图片上方 */
+  z-index: 0; /* 保证文字在图片上方 */
 }
 
 .links {
@@ -49,7 +55,7 @@
     justify-content: space-between;
     top: 70%;
     padding: 70px;
-    z-index: 2; /* 保证链接在图片上方 */
+    z-index: 0; /* 保证链接在图片上方 */
 }
 
 .links a {

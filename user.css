@@ -1,5 +1,59 @@
 .user-layout {
     width: 100%;
-    height: 520px;
-    background-color: black;
+}
+
+.user {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.user .m-title h2{
+    font-size: 32px;
+    font-weight: 500;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 16px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.user .m-title p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    color: #000000a6;
+    line-height: 28px;
+    margin-bottom: 60px;
+    white-space: break-spaces;
+}
+
+.user .userbox-layout {
+    width: 800px;
+    min-height: 192px;
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,.05);
+    padding: 32px;
+    margin: 0 auto;
+}
+
+.userbox-layout .userbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px
+}
+
+.userbox img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 24px;
+}
+
+.userbox h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #0a1943;
+    line-height: 25px;
+    margin-bottom: 16px;
 }
